@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-267dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/flyingLogo1"
+                    android:layout_width="277dp"
+                    android:layout_height="143dp"
+                    app:srcCompat="@drawable/flying_logo" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="10dp"
+                    android:text="flying의 다양한 서비스와 혜택을 누리세요." />
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/seat_layout_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <FrameLayout
+                    android:id="@+id/seat_layout"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_centerInParent="true"
+                    android:background="#ccc">
+
+                    <!-- 좌석 배치도를 표현하는 요소 -->
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/seat_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_margin="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="좌석 수:"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/seat_number"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        android:inputType="number"
+                        android:min="1"
+                        android:max="100"/>
+
+                    <Button
+                        android:id="@+id/createBtn"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:text="생성"
+                        android:background="@drawable/button_custom2"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_custom"
+                android:text="좌석 배치 저장"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

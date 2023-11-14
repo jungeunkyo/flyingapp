@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="42dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/flyingLogo3"
+                android:layout_width="221dp"
+                android:layout_height="110dp"
+                app:srcCompat="@drawable/flying_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="회원가입"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxAll"
+                    android:layout_width="326dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="10dp"
+                    android:text="모두 동의합니다."
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/firstCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_margin="10dp"
+                    android:text="플라잉 이용약관 동의 (필수)" />
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/scrollview_custom"
+                    android:scrollbarStyle="insideInset">
+
+                    <TextView
+                        android:id="@+id/flying_tos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="가나다라마바사아자차카타파함냐러ㅐㅈ댜ㅓㄹㅈ매ㅓ잳ㄹㄴㅇ러ㅑㄷ렁ㄹ야천이ㅑㅊ러잳랴ㅓ냘처ㅐ냘대ㅑㅇ펴애런ㄷ개렴댈며대랴ㅕㅁㄴ애퍄ㅓㅇ늪ㅁㅇ널미대랴며ㅔ댁ㅈ매런ㅇㅍ아퍼앯ㄴㄷ갸려ㅐㅇㅎ펑르패ㅑㅓㅍ대야ㅣㅓㄻ재랴ㅓㅁ대럼대야퍼내야펄재댜러츠냉퍄ㅓ대러지런ㅍfajsdoifcjsvnovmwsdvwijdcoiw"
+                        android:textSize="14sp"
+                        tools:layout_editor_absoluteX="28dp"
+                        tools:layout_editor_absoluteY="304dp" />
+                </ScrollView>
+
+
+                <CheckBox
+                    android:id="@+id/secondCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_margin="10dp"
+                    android:text="개인정보 수집 및 이용 동의 (필수)" />
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/scrollview_custom"
+                    android:scrollbarStyle="insideInset">
+
+                    <TextView
+                        android:id="@+id/gaeinjeongbo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="가나다라마바사아자차카타파함냐러ㅐㅈ댜ㅓㄹㅈ매ㅓ잳ㄹㄴㅇ러ㅑㄷ렁ㄹ야천이ㅑㅊ러잳랴ㅓ냘처ㅐ냘대ㅑㅇ펴애런ㄷ개렴댈며대랴ㅕㅁㄴ애퍄ㅓㅇ늪ㅁㅇ널미대랴며ㅔ댁ㅈ매런ㅇㅍ아퍼앯ㄴㄷ갸려ㅐㅇㅎ펑르패ㅑㅓㅍ대야ㅣㅓㄻ재랴ㅓㅁ대럼대야퍼내야펄재댜러츠냉퍄ㅓ대러지런ㅍfajsdoifcjsvnovmwsdvwijdcoiw"
+                        android:textSize="14sp"
+                        tools:layout_editor_absoluteX="28dp"
+                        tools:layout_editor_absoluteY="304dp" />
+                </ScrollView>
+
+                <CheckBox
+                    android:id="@+id/thirdCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_margin="10dp"
+                    android:text="위치기반서비스 이용약관 동의 (선택)" />
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/scrollview_custom"
+                    android:scrollbarStyle="insideInset">
+
+                    <TextView
+                        android:id="@+id/gps_iyongyakgwan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="가나다라마바사아자차카타파함냐러ㅐㅈ댜ㅓㄹㅈ매ㅓ잳ㄹㄴㅇ러ㅑㄷ렁ㄹ야천이ㅑㅊ러잳랴ㅓ냘처ㅐ냘대ㅑㅇ펴애런ㄷ개렴댈며대랴ㅕㅁㄴ애퍄ㅓㅇ늪ㅁㅇ널미대랴며ㅔ댁ㅈ매런ㅇㅍ아퍼앯ㄴㄷ갸려ㅐㅇㅎ펑르패ㅑㅓㅍ대야ㅣㅓㄻ재랴ㅓㅁ대럼대야퍼내야펄재댜러츠냉퍄ㅓ대러지런ㅍfajsdoifcjsvnovmwsdvwijdcoiw"
+                        android:textSize="14sp"
+                        tools:layout_editor_absoluteX="28dp"
+                        tools:layout_editor_absoluteY="304dp" />
+                </ScrollView>
+
+                <CheckBox
+                    android:id="@+id/fourthCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_margin="10dp"
+                    android:text="프로모션 정보 수신 동의 (선택)" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/scrollview_custom"
+                    android:scrollbarStyle="insideInset">
+
+                    <TextView
+                        android:id="@+id/promotion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="가나다라마바사아자차카타파함냐러ㅐㅈ댜ㅓㄹㅈ매ㅓ잳ㄹㄴㅇ러ㅑㄷ렁ㄹ야천이ㅑㅊ러잳랴ㅓ냘처ㅐ냘대ㅑㅇ펴애런ㄷ개렴댈며대랴ㅕㅁㄴ애퍄ㅓㅇ늪ㅁㅇ널미대랴며ㅔ댁ㅈ매런ㅇㅍ아퍼앯ㄴㄷ갸려ㅐㅇㅎ펑르패ㅑㅓㅍ대야ㅣㅓㄻ재랴ㅓㅁ대럼대야퍼내야펄재댜러츠냉퍄ㅓ대러지런ㅍfajsdoifcjsvnovmwsdvwijdcoiw"
+                        android:textSize="14sp"
+                        tools:layout_editor_absoluteX="28dp"
+                        tools:layout_editor_absoluteY="304dp" />
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/BeforeBtn2"
+                    android:layout_width="120dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_custom2"
+                    android:text="이전"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/CompletionBtn"
+                    android:layout_width="120dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_custom"
+                    android:text="다음"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
